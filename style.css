@@ -21,6 +21,7 @@ body {
   position: relative;
   width: 90%;
   max-width: 400px;
+  z-index: 1;
 }
 
 h1 {
@@ -62,4 +63,15 @@ button {
 
 .hidden {
   display: none;
+}
+
+/* Confetti Canvas */
+#confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
 }
