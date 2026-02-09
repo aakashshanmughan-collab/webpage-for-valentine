@@ -1,28 +1,24 @@
-/* Reset default margins and set background */
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   display: flex;
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* centers vertically */
-  background: linear-gradient(135deg, #ffc0cb, #ffdab9); /* soft pink-peach gradient */
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffb6c1, #dda0dd);
   font-family: 'Arial', sans-serif;
 }
 
-/* Container for all content */
 .container {
   text-align: center;
 }
 
-/* Main Valentine text */
 h1 {
   font-size: 2.5rem;
   color: #d6336c;
   margin-bottom: 20px;
 }
 
-/* Buttons styling */
 button {
   font-size: 1.2rem;
   padding: 12px 24px;
@@ -30,14 +26,10 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, left 0.3s ease, top 0.3s ease;
+  position: relative;
 }
 
-button:hover {
-  transform: scale(1.05);
-}
-
-/* Specific button colors */
 button.heart {
   background-color: #ff69b4;
   color: white;
@@ -48,9 +40,19 @@ button.sad {
   color: white;
 }
 
-/* Small text under buttons */
 p {
   margin-top: 15px;
   font-size: 1rem;
   color: #444;
+}
+
+.firework, .kiss {
+  position: fixed;
+  font-size: 2rem;
+  animation: floatUp 2s ease forwards;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-200px); opacity: 0; }
 }
