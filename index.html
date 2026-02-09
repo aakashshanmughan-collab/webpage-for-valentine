@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valentine Page</title>
-  <link rel="stylesheet" href="style.css"> <!-- link to your CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Will you be my Valentine?</h1>
+    <h1>💖 Will you be my Valentine? 💖</h1>
     
     <div class="buttons">
-      <button class="heart">💕</button>
-      <button class="sad">🥺</button>
+      <button id="yesBtn" class="heart">Yes 💞</button>
+      <button id="noBtn" class="sad">No 💔</button>
     </div>
     
-    <p>I knew it!</p>
+    <p id="message"></p>
+    <div id="effects"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
